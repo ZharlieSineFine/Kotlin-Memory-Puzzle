@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/landingFragment">
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="au.edu.jcu.zhaochanglinmemorygame.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game">
+        <argument
+            android:name="GAME_NAME"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="au.edu.jcu.zhaochanglinmemorygame.LandingFragment"
+        android:label="LandingFragment"
+        tools:layout="@layout/fragment_landing">
+        <action
+            android:id="@+id/action_landingFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_shareFragment"
+            app:destination="@id/shareFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_leaderboardFragment"
+            app:destination="@id/leaderboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="au.edu.jcu.zhaochanglinmemorygame.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/shareFragment"
+        android:name="au.edu.jcu.zhaochanglinmemorygame.ShareFragment"
+        android:label="ShareFragment" />
+    <fragment
+        android:id="@+id/leaderboardFragment"
+        android:name="au.edu.jcu.zhaochanglinmemorygame.LeaderboardFragment"
+        android:label="LeaderboardFragment" />
+</navigation>

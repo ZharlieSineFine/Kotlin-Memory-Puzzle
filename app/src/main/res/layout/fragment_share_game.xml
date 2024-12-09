@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/goku_share"
+    android:backgroundTintMode="screen"
+    android:padding="16dp"
+    tools:context=".ShareFragment">
+
+    <!-- TextBox explaining the game -->
+
+    <!-- Share Button -->
+
+    <TextView
+        android:id="@+id/txtHowToPlay"
+        android:layout_width="366dp"
+        android:layout_height="280dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/match_pairs_of_cards_tap_to_flip_a_card_remember_its_position_and_locate_its_match_try_to_complete_the_game_in_the_fewest_moves_possible"
+        android:textColor="#ff7828"
+        android:textDirection="firstStrongRtl"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgShare"
+        android:layout_width="158dp"
+        android:layout_height="174dp"
+        android:layout_marginBottom="25dp"
+        android:clickable="true"
+        android:contentDescription="@string/share_this_game"
+        android:focusable="true"
+        android:padding="20dp"
+        android:src="@drawable/goku_share_button"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="342dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/how_to_play"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FF7828"
+        android:textColorHighlight="#A04444"
+        android:textColorLink="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

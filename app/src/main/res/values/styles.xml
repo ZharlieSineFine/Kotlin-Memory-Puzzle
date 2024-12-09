@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSwitch" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">@color/colorPrimary</item> <!-- Color when ON -->
+        <item name="colorControlNormal">@color/colorAccent</item> <!-- Color when OFF -->
+        <item name="android:textColorSecondary">@color/colorAccent</item> <!-- Secondary text color -->
+    </style>
+
+    <style name="DrawerMenuItem" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+</resources>
